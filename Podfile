@@ -4,3 +4,4 @@ platform :ios, "6.0"
 
 
 pod 'FrameAccessor', '~> 2.0'
+pod 'NSDate+Calendar', '~> 0.0.6'

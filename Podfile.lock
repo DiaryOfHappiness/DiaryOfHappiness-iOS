@@ -1,10 +1,13 @@
 PODS:
   - FrameAccessor (2.0)
+  - NSDate+Calendar (0.0.6)
 
 DEPENDENCIES:
   - FrameAccessor (~> 2.0)
+  - NSDate+Calendar (~> 0.0.6)
 
 SPEC CHECKSUMS:
   FrameAccessor: a4cbd52f4ce74d9c3338dd7db9707fb35a71af71
+  NSDate+Calendar: 73e0e7429de90201da3fb41f7165cccb85a59a48
 
 COCOAPODS: 0.35.0

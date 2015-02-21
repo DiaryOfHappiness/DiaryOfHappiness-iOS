@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DHAppDelegate.h
 //  Diary of Happiness
 //
 //  Created by Philip Vasilchenko on 21.02.15.
@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class DHRootViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@interface DHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow * window;
+@property (nonatomic, strong) DHRootViewController * rootViewController;
 
 @end
 
