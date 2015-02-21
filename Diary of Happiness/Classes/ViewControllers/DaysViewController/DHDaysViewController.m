@@ -72,11 +72,19 @@
 
 
 - (void)setInitialViewControllerForPageView:(BOOL)animated {
-    NSArray * viewControllers = @[[self.daysDataProvider viewControllerAtIndex:self.daysDataProvider.initialItemIndex]];
-    [self.pageViewController setViewControllers:viewControllers
-                                      direction:UIPageViewControllerNavigationDirectionForward
-                                       animated:animated
-                                     completion:nil];
+    id currentController = self.pageViewController.viewControllers.firstObject;
+    NSUInteger currentIndex = [self.daysDataProvider indexOfViewController:currentController];
+    NSUInteger initialIndex = self.daysDataProvider.initialItemIndex;
+
+    if ( currentIndex != initialIndex ) {
+        UIPageViewControllerNavigationDirection direction = UIPageViewControllerNavigationDirectionForward;
+        if ( currentIndex > initialIndex && currentIndex != NSNotFound ) {
+            direction = UIPageViewControllerNavigationDirectionReverse;
+        }
+
+        NSArray * viewControllers = @[[self.daysDataProvider viewControllerAtIndex:initialIndex]];
+        [self.pageViewController setViewControllers:viewControllers direction:direction animated:animated completion:nil];
+    }
 }
 
 
