@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664545DD1A98EA2D00C5A682 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545DC1A98EA2D00C5A682 /* main.m */; };
+		664545E01A98EA2D00C5A682 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545DF1A98EA2D00C5A682 /* AppDelegate.m */; };
+		664545E31A98EA2D00C5A682 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545E21A98EA2D00C5A682 /* RootViewController.m */; };
+		664545E61A98EA2D00C5A682 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545E51A98EA2D00C5A682 /* DataViewController.m */; };
+		664545E91A98EA2D00C5A682 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545E81A98EA2D00C5A682 /* ModelController.m */; };
+		664545EC1A98EA2D00C5A682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664545EA1A98EA2D00C5A682 /* Main.storyboard */; };
+		664545EE1A98EA2D00C5A682 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664545ED1A98EA2D00C5A682 /* Images.xcassets */; };
+		664545F11A98EA2D00C5A682 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 664545EF1A98EA2D00C5A682 /* LaunchScreen.xib */; };
+		664545FD1A98EA2D00C5A682 /* Diary_of_HappinessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545FC1A98EA2D00C5A682 /* Diary_of_HappinessTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		664545F71A98EA2D00C5A682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 664545CF1A98EA2D00C5A682 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 664545D61A98EA2D00C5A682;
+			remoteInfo = "Diary of Happiness";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		664545D71A98EA2D00C5A682 /* Diary of Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diary of Happiness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664545DB1A98EA2D00C5A682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		664545DC1A98EA2D00C5A682 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		664545DE1A98EA2D00C5A682 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		664545DF1A98EA2D00C5A682 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		664545E11A98EA2D00C5A682 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		664545E21A98EA2D00C5A682 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		664545E41A98EA2D00C5A682 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		664545E51A98EA2D00C5A682 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		664545E71A98EA2D00C5A682 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		664545E81A98EA2D00C5A682 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		664545EB1A98EA2D00C5A682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		664545ED1A98EA2D00C5A682 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		664545F01A98EA2D00C5A682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		664545F61A98EA2D00C5A682 /* Diary of HappinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diary of HappinessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664545FB1A98EA2D00C5A682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		664545FC1A98EA2D00C5A682 /* Diary_of_HappinessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Diary_of_HappinessTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		664545D41A98EA2D00C5A682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664545F31A98EA2D00C5A682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		664545CE1A98EA2D00C5A682 = {
+			isa = PBXGroup;
+			children = (
+				664545D91A98EA2D00C5A682 /* Diary of Happiness */,
+				664545F91A98EA2D00C5A682 /* Diary of HappinessTests */,
+				664545D81A98EA2D00C5A682 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		664545D81A98EA2D00C5A682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664545D71A98EA2D00C5A682 /* Diary of Happiness.app */,
+				664545F61A98EA2D00C5A682 /* Diary of HappinessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664545D91A98EA2D00C5A682 /* Diary of Happiness */ = {
+			isa = PBXGroup;
+			children = (
+				664545DE1A98EA2D00C5A682 /* AppDelegate.h */,
+				664545DF1A98EA2D00C5A682 /* AppDelegate.m */,
+				664545E11A98EA2D00C5A682 /* RootViewController.h */,
+				664545E21A98EA2D00C5A682 /* RootViewController.m */,
+				664545E41A98EA2D00C5A682 /* DataViewController.h */,
+				664545E51A98EA2D00C5A682 /* DataViewController.m */,
+				664545E71A98EA2D00C5A682 /* ModelController.h */,
+				664545E81A98EA2D00C5A682 /* ModelController.m */,
+				664545EA1A98EA2D00C5A682 /* Main.storyboard */,
+				664545ED1A98EA2D00C5A682 /* Images.xcassets */,
+				664545EF1A98EA2D00C5A682 /* LaunchScreen.xib */,
+				664545DA1A98EA2D00C5A682 /* Supporting Files */,
+			);
+			path = "Diary of Happiness";
+			sourceTree = "<group>";
+		};
+		664545DA1A98EA2D00C5A682 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				664545DB1A98EA2D00C5A682 /* Info.plist */,
+				664545DC1A98EA2D00C5A682 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		664545F91A98EA2D00C5A682 /* Diary of HappinessTests */ = {
+			isa = PBXGroup;
+			children = (
+				664545FC1A98EA2D00C5A682 /* Diary_of_HappinessTests.m */,
+				664545FA1A98EA2D00C5A682 /* Supporting Files */,
+			);
+			path = "Diary of HappinessTests";
+			sourceTree = "<group>";
+		};
+		664545FA1A98EA2D00C5A682 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				664545FB1A98EA2D00C5A682 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		664545D61A98EA2D00C5A682 /* Diary of Happiness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664546001A98EA2D00C5A682 /* Build configuration list for PBXNativeTarget "Diary of Happiness" */;
+			buildPhases = (
+				664545D31A98EA2D00C5A682 /* Sources */,
+				664545D41A98EA2D00C5A682 /* Frameworks */,
+				664545D51A98EA2D00C5A682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diary of Happiness";
+			productName = "Diary of Happiness";
+			productReference = 664545D71A98EA2D00C5A682 /* Diary of Happiness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		664545F51A98EA2D00C5A682 /* Diary of HappinessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664546031A98EA2D00C5A682 /* Build configuration list for PBXNativeTarget "Diary of HappinessTests" */;
+			buildPhases = (
+				664545F21A98EA2D00C5A682 /* Sources */,
+				664545F31A98EA2D00C5A682 /* Frameworks */,
+				664545F41A98EA2D00C5A682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				664545F81A98EA2D00C5A682 /* PBXTargetDependency */,
+			);
+			name = "Diary of HappinessTests";
+			productName = "Diary of HappinessTests";
+			productReference = 664545F61A98EA2D00C5A682 /* Diary of HappinessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		664545CF1A98EA2D00C5A682 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Philip Vasilchenko";
+				TargetAttributes = {
+					664545D61A98EA2D00C5A682 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					664545F51A98EA2D00C5A682 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 664545D61A98EA2D00C5A682;
+					};
+				};
+			};
+			buildConfigurationList = 664545D21A98EA2D00C5A682 /* Build configuration list for PBXProject "Diary of Happiness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 664545CE1A98EA2D00C5A682;
+			productRefGroup = 664545D81A98EA2D00C5A682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				664545D61A98EA2D00C5A682 /* Diary of Happiness */,
+				664545F51A98EA2D00C5A682 /* Diary of HappinessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		664545D51A98EA2D00C5A682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664545EC1A98EA2D00C5A682 /* Main.storyboard in Resources */,
+				664545F11A98EA2D00C5A682 /* LaunchScreen.xib in Resources */,
+				664545EE1A98EA2D00C5A682 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664545F41A98EA2D00C5A682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		664545D31A98EA2D00C5A682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664545E61A98EA2D00C5A682 /* DataViewController.m in Sources */,
+				664545E01A98EA2D00C5A682 /* AppDelegate.m in Sources */,
+				664545E91A98EA2D00C5A682 /* ModelController.m in Sources */,
+				664545DD1A98EA2D00C5A682 /* main.m in Sources */,
+				664545E31A98EA2D00C5A682 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664545F21A98EA2D00C5A682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664545FD1A98EA2D00C5A682 /* Diary_of_HappinessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		664545F81A98EA2D00C5A682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 664545D61A98EA2D00C5A682 /* Diary of Happiness */;
+			targetProxy = 664545F71A98EA2D00C5A682 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		664545EA1A98EA2D00C5A682 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				664545EB1A98EA2D00C5A682 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		664545EF1A98EA2D00C5A682 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				664545F01A98EA2D00C5A682 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		664545FE1A98EA2D00C5A682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		664545FF1A98EA2D00C5A682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		664546011A98EA2D00C5A682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Diary of Happiness/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		664546021A98EA2D00C5A682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Diary of Happiness/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		664546041A98EA2D00C5A682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Diary of HappinessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diary of Happiness.app/Diary of Happiness";
+			};
+			name = Debug;
+		};
+		664546051A98EA2D00C5A682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Diary of HappinessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diary of Happiness.app/Diary of Happiness";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		664545D21A98EA2D00C5A682 /* Build configuration list for PBXProject "Diary of Happiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664545FE1A98EA2D00C5A682 /* Debug */,
+				664545FF1A98EA2D00C5A682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664546001A98EA2D00C5A682 /* Build configuration list for PBXNativeTarget "Diary of Happiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664546011A98EA2D00C5A682 /* Debug */,
+				664546021A98EA2D00C5A682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		664546031A98EA2D00C5A682 /* Build configuration list for PBXNativeTarget "Diary of HappinessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664546041A98EA2D00C5A682 /* Debug */,
+				664546051A98EA2D00C5A682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 664545CF1A98EA2D00C5A682 /* Project object */;
+}
