@@ -11,4 +11,18 @@
 
 @implementation DHDayModel
 
+- (instancetype)initWithDate:(NSDate *)date {
+    self = [super init];
+    if ( self ) {
+        self.date = date;
+    }
+    return self;
+}
+
+
++ (instancetype)modelWithDate:(NSDate *)date {
+    return [[self alloc] initWithDate:date];
+}
+
+
 @end

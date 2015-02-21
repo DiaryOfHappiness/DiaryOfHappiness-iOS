@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378182981E015C0F496D8E98 /* DHDayModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 378185A0670B2612A2ADFEBC /* DHDayModelBuilder.m */; };
 		37818454BBAC6A724F3F3797 /* DHDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781841E5EDAAB30973336AB /* DHDayModel.m */; };
 		378184F87C8B3C9E3A1103ED /* DHDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378181E98A28438C63002788 /* DHDaysViewController.m */; };
 		378186720E686A22A7166E4D /* DHDaysDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 37818887A661FE713DD6BCE8 /* DHDaysDataProvider.m */; };
@@ -30,8 +31,10 @@
 		378181E98A28438C63002788 /* DHDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDaysViewController.m; sourceTree = "<group>"; };
 		37818252F92553813DDE2369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37818293CC71369D6B2081C2 /* DHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAppDelegate.m; sourceTree = "<group>"; };
+		378182EE372339B0884D9685 /* DHDayModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDayModelBuilder.h; sourceTree = "<group>"; };
 		3781841E5EDAAB30973336AB /* DHDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDayModel.m; sourceTree = "<group>"; };
 		3781852840321118EE70315B /* DHAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAnswerModel.m; sourceTree = "<group>"; };
+		378185A0670B2612A2ADFEBC /* DHDayModelBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDayModelBuilder.m; sourceTree = "<group>"; };
 		3781867E51EC41267AC59C4E /* DHQuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHQuestionModel.h; sourceTree = "<group>"; };
 		378186CCD16FBA7655056146 /* DHQuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHQuestionModel.m; sourceTree = "<group>"; };
 		3781871DC836251F241CA949 /* DHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 			path = XIB;
 			sourceTree = "<group>";
 		};
+		378187CD9FFEACF6EC3B075A /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				378185A0670B2612A2ADFEBC /* DHDayModelBuilder.m */,
+				378182EE372339B0884D9685 /* DHDayModelBuilder.h */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		378189801067238B94185DAF /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 				378185F16349F7571D2E9F8E /* ViewControllers */,
 				37818FFC490FF55345390D3D /* DataProviders */,
 				37818E3CD545AC85E381AF5C /* Models */,
+				378187CD9FFEACF6EC3B075A /* Builders */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -356,6 +369,7 @@
 				37818454BBAC6A724F3F3797 /* DHDayModel.m in Sources */,
 				37818FC9F4C51BF2F0485CFC /* DHQuestionModel.m in Sources */,
 				37818AEE2538467326641E61 /* DHAnswerModel.m in Sources */,
+				378182981E015C0F496D8E98 /* DHDayModelBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

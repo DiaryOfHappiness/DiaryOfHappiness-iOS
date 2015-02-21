@@ -86,7 +86,13 @@
 
         NSArray * viewControllers = @[[self.daysDataProvider viewControllerAtIndex:initialIndex]];
         [self.pageViewController setViewControllers:viewControllers direction:direction animated:animated completion:nil];
+        [self updateTitleForController:viewControllers.firstObject];
     }
+}
+
+
+- (void)updateTitleForController:(UIViewController *)viewController {
+    self.title = viewController.title;
 }
 
 
@@ -99,6 +105,16 @@
 
 - (IBAction)onTodayAction:(id)sender {
     [self setInitialViewControllerForPageView:YES];
+}
+
+
+#pragma mark - Page View Controller Delegate
+
+- (void)pageViewController:(UIPageViewController *)pageViewController
+        didFinishAnimating:(BOOL)finished 
+   previousViewControllers:(NSArray *)previousViewControllers 
+       transitionCompleted:(BOOL)completed {
+    [self updateTitleForController:pageViewController.viewControllers.firstObject];
 }
 
 @end

@@ -11,4 +11,25 @@
 
 @implementation DHAnswerModel
 
+- (instancetype)initWithAnswer:(NSString *)answer {
+    self = [super init];
+    if ( self ) {
+        self.answer = answer;
+    }
+    return self;
+}
+
+
++ (instancetype)modelWithAnswer:(NSString *)answer {
+    return [[self alloc] initWithAnswer:answer];
+}
+
+
+#pragma mark - Properties
+
+- (BOOL)isEmpty {
+    return self.answer.length == 0;
+}
+
+
 @end

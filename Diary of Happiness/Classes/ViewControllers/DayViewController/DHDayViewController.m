@@ -9,37 +9,51 @@
 #import <NSDate+Calendar/NSDate+Compare.h>
 #import "DHDayViewController.h"
 #import "NSDate+Day.h"
+#import "DHDayModel.h"
 
 
 @interface DHDayViewController ()
-
 @end
 
 
 @implementation DHDayViewController
 
+#pragma mark - Setters
+
+- (void)setDayModel:(DHDayModel *)dayModel {
+    if ( ![_dayModel isEqual:dayModel] ) {
+        _dayModel = dayModel;
+        [self updateTitle];
+    }
+}
+
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.dataLabel.text = [self.dataObject description];
-
+    NSDate * modelDate = self.dayModel.date;
     NSDate * today = [[NSDate date] dateToday];
-    if ( [self.dataObject isEqualToDate:today] ) {
+
+    [self updateTitle];
+    self.dataLabel.text = self.title;
+
+    if ( [modelDate isEqualToDate:today] ) {
         self.view.backgroundColor = [UIColor yellowColor];
-    } else if ( [self.dataObject isGreaterDate:today] ) {
+    } else if ( [modelDate isGreaterDate:today] ) {
         self.view.backgroundColor = [UIColor redColor];
-    } else if ( [self.dataObject isLessDate:today] ) {
+    } else if ( [modelDate isLessDate:today] ) {
         self.view.backgroundColor = [UIColor greenColor];
     }
+}
+
+
+#pragma mark - Private Methods
+
+- (void)updateTitle {
+    self.title = [NSDateFormatter localizedStringFromDate:self.dayModel.date
+                                                dateStyle:NSDateFormatterLongStyle
+                                                timeStyle:NSDateFormatterNoStyle];
 }
 
 @end

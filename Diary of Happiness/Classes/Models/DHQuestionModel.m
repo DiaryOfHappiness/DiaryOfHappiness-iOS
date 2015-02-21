@@ -11,4 +11,18 @@
 
 @implementation DHQuestionModel
 
+- (instancetype)initWithQuestion:(NSString *)question {
+    self = [super init];
+    if ( self ) {
+        self.question = question;
+    }
+    return self;
+}
+
+
++ (instancetype)modelWithQuestion:(NSString *)question {
+    return [[self alloc] initWithQuestion:question];
+}
+
+
 @end

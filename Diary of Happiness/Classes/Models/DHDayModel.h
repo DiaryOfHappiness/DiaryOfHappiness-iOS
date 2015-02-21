@@ -11,6 +11,11 @@
 
 @interface DHDayModel : NSObject
 
+@property (nonatomic, strong) NSDate * date;
 @property (nonatomic, strong) NSArray * questions;
+
+- (instancetype)initWithDate:(NSDate *)date;
++ (instancetype)modelWithDate:(NSDate *)date;
+
 
 @end

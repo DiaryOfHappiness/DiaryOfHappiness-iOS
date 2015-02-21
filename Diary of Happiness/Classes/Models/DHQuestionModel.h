@@ -14,4 +14,7 @@
 @property (nonatomic, copy) NSString * question;
 @property (nonatomic, strong) NSArray * answers;
 
+- (instancetype)initWithQuestion:(NSString *)question;
++ (instancetype)modelWithQuestion:(NSString *)question;
+
 @end

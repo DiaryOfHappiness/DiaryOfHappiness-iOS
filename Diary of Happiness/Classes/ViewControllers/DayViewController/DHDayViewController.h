@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class DHDayModel;
+
+
 @interface DHDayViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel * dataLabel;
-@property (strong, nonatomic) NSDate * dataObject;
+@property (strong, nonatomic) DHDayModel * dayModel;
 
 @end
 

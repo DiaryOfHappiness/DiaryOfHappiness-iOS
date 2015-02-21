@@ -9,11 +9,13 @@
 #import <NSDate+Calendar/NSDate+Calendar.h>
 #import "DHDaysDataProvider.h"
 #import "DHDayViewController.h"
+#import "DHDayModelBuilder.h"
+#import "DHDayModel.h"
 
 
 @interface DHDaysDataProvider ()
+@property (nonatomic, strong) DHDayModelBuilder * modelBuilder;
 @property (nonatomic, strong) NSArray * daysDataSource;
-@property (nonatomic, strong) NSDate * todayDay;
 @end
 
 
@@ -22,12 +24,8 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        NSDate * currentDay = [[NSDate date] dateToday];
-        NSDate * yesterdayDay = [currentDay dateYesterday];
-        NSDate * tomorrowDay = [currentDay dateTomorrow];
-
-        self.todayDay = currentDay;
-        self.daysDataSource = @[ yesterdayDay, currentDay, tomorrowDay ];
+        self.modelBuilder = [DHDayModelBuilder new];
+        [self createDataSource];
     }
     return self;
 }
@@ -40,14 +38,14 @@
         return nil;
     }
 
-    DHDayViewController * dataViewController = [DHDayViewController new];
-    dataViewController.dataObject = self.daysDataSource[index];
-    return dataViewController;
+    DHDayViewController * dayViewController = [DHDayViewController new];
+    dayViewController.dayModel = self.daysDataSource[index];
+    return dayViewController;
 }
 
 
 - (NSUInteger)indexOfViewController:(DHDayViewController *)viewController {
-    return [self.daysDataSource indexOfObject:viewController.dataObject];
+    return [self.daysDataSource indexOfObject:viewController.dayModel];
 }
 
 
@@ -57,7 +55,26 @@
 
 
 - (NSUInteger)initialItemIndex {
-    return [self.daysDataSource indexOfObject:self.todayDay];
+    return MAX(self.numberOfItems - 2, 0);
+}
+
+
+#pragma mark - Private Methods
+
+- (void)createDataSource {
+    NSDate * currentDay = [[NSDate date] dateToday];
+    NSDate * tomorrowDay = [currentDay dateTomorrow];
+
+    const NSUInteger historyLength = 7;
+    NSMutableArray * dataSource = [NSMutableArray arrayWithCapacity:historyLength + 2];
+    for (NSUInteger skipDays = historyLength; skipDays > 0; skipDays--) {
+        NSDate * dayDate = [currentDay dateByAddingDays:-skipDays];
+        [dataSource addObject:[self.modelBuilder dayModelForDate:dayDate]];
+    }
+    [dataSource addObject:[self.modelBuilder dayModelForDate:currentDay]];
+    [dataSource addObject:[self.modelBuilder dayModelForDate:tomorrowDay]];
+
+    self.daysDataSource = dataSource.copy;
 }
 
 
