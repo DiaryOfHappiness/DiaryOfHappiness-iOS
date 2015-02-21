@@ -8,6 +8,7 @@
 
 #import "DHDaysViewController.h"
 #import "DHDaysDataProvider.h"
+#import "ViewFrameAccessor.h"
 
 
 @interface DHDaysViewController ()
@@ -64,7 +65,8 @@
     [self addChildViewController:self.pageViewController];
     [self.view addSubview:self.pageViewController.view];
 
-    self.pageViewController.view.frame = self.view.bounds;
+    const CGFloat yOffset = 64.f;
+    self.pageViewController.view.frame = CGRectMake(0, yOffset, self.view.width, self.view.height - yOffset);
     [self.pageViewController didMoveToParentViewController:self];
 
     self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
