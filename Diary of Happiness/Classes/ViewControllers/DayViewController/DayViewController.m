@@ -1,18 +1,18 @@
 //
-//  DataViewController.m
+//  DayViewController.m
 //  Diary of Happiness
 //
 //  Created by Philip Vasilchenko on 21.02.15.
 //  Copyright (c) 2015 Philip Vasilchenko. All rights reserved.
 //
 
-#import "DataViewController.h"
+#import "DayViewController.h"
 
-@interface DataViewController ()
+@interface DayViewController ()
 
 @end
 
-@implementation DataViewController
+@implementation DayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -10,7 +10,7 @@
 
 @interface RootViewController : UIViewController <UIPageViewControllerDelegate>
 
-@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (nonatomic, strong) UIPageViewController * pageViewController;
 
 @end
 

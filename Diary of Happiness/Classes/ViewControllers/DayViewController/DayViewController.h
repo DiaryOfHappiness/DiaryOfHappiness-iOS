@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DayViewController.h
 //  Diary of Happiness
 //
 //  Created by Philip Vasilchenko on 21.02.15.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface DayViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
+@property (strong, nonatomic) id dataObject;
 
 @end
 

@@ -7,7 +7,7 @@
 //
 
 #import "ModelController.h"
-#import "DataViewController.h"
+#import "DayViewController.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -17,8 +17,6 @@
  
  There is no need to actually create view controllers for each page in advance -- indeed doing so incurs unnecessary overhead. Given the data model, these methods create, configure, and return a new view controller on demand.
  */
-
-
 @interface ModelController ()
 
 @property (readonly, strong, nonatomic) NSArray *pageData;
@@ -36,19 +34,19 @@
     return self;
 }
 
-- (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
+- (DayViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {
     // Return the data view controller for the given index.
     if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
         return nil;
     }
 
     // Create a new view controller and pass suitable data.
-    DataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DataViewController"];
+    DayViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"DayViewController"];
     dataViewController.dataObject = self.pageData[index];
     return dataViewController;
 }
 
-- (NSUInteger)indexOfViewController:(DataViewController *)viewController {
+- (NSUInteger)indexOfViewController:(DayViewController *)viewController {
     // Return the index of the given data view controller.
     // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
     return [self.pageData indexOfObject:viewController.dataObject];
@@ -58,7 +56,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(DayViewController *)viewController];
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
@@ -69,7 +67,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    NSUInteger index = [self indexOfViewController:(DayViewController *)viewController];
     if (index == NSNotFound) {
         return nil;
     }

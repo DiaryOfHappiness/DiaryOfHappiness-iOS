@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DataViewController;
+@class DayViewController;
 
 @interface ModelController : NSObject <UIPageViewControllerDataSource>
 
-- (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
-- (NSUInteger)indexOfViewController:(DataViewController *)viewController;
+- (DayViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
+- (NSUInteger)indexOfViewController:(DayViewController *)viewController;
 
 @end
 
