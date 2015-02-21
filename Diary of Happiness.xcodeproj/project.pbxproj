@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37818454BBAC6A724F3F3797 /* DHDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781841E5EDAAB30973336AB /* DHDayModel.m */; };
 		378184F87C8B3C9E3A1103ED /* DHDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378181E98A28438C63002788 /* DHDaysViewController.m */; };
 		378186720E686A22A7166E4D /* DHDaysDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 37818887A661FE713DD6BCE8 /* DHDaysDataProvider.m */; };
 		37818806786C3F3760773262 /* DHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781819016F931EAA6077C86 /* DHRootViewController.m */; };
 		378188FFA9CCC94671D687D7 /* DHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37818293CC71369D6B2081C2 /* DHAppDelegate.m */; };
 		37818A527F08B9F3831DD4EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37818252F92553813DDE2369 /* Images.xcassets */; };
+		37818AEE2538467326641E61 /* DHAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781852840321118EE70315B /* DHAnswerModel.m */; };
 		37818B26B4B3E0AE4664EFAF /* DHDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378180E2C58FFAB4972F334A /* DHDayViewController.m */; };
+		37818FC9F4C51BF2F0485CFC /* DHQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 378186CCD16FBA7655056146 /* DHQuestionModel.m */; };
 		6620AB4CD4EAAEC8389317ED /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E17252E0D050B028754CF6 /* libPods.a */; };
 		664545DD1A98EA2D00C5A682 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664545DC1A98EA2D00C5A682 /* main.m */; };
 		66E2C6231A98F94B0054C92E /* DHRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C6221A98F94B0054C92E /* DHRootViewController.xib */; };
@@ -27,12 +30,18 @@
 		378181E98A28438C63002788 /* DHDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDaysViewController.m; sourceTree = "<group>"; };
 		37818252F92553813DDE2369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37818293CC71369D6B2081C2 /* DHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAppDelegate.m; sourceTree = "<group>"; };
+		3781841E5EDAAB30973336AB /* DHDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDayModel.m; sourceTree = "<group>"; };
+		3781852840321118EE70315B /* DHAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAnswerModel.m; sourceTree = "<group>"; };
+		3781867E51EC41267AC59C4E /* DHQuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHQuestionModel.h; sourceTree = "<group>"; };
+		378186CCD16FBA7655056146 /* DHQuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHQuestionModel.m; sourceTree = "<group>"; };
 		3781871DC836251F241CA949 /* DHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAppDelegate.h; sourceTree = "<group>"; };
 		37818887A661FE713DD6BCE8 /* DHDaysDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDaysDataProvider.m; sourceTree = "<group>"; };
 		378188D35CF79A2C7134DC2F /* DHDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDayViewController.h; sourceTree = "<group>"; };
 		378188EB76B63FC760D98576 /* DHDaysDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDaysDataProvider.h; sourceTree = "<group>"; };
 		37818B13C48A21D5957BA3BD /* DHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRootViewController.h; sourceTree = "<group>"; };
+		37818B255ED98E5A76DEF47D /* DHAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAnswerModel.h; sourceTree = "<group>"; };
 		37818C9C120ABB1F4694F870 /* DHDaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDaysViewController.h; sourceTree = "<group>"; };
+		37818EB84C6567BD551DA63D /* DHDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDayModel.h; sourceTree = "<group>"; };
 		664545D71A98EA2D00C5A682 /* Diary of Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diary of Happiness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664545DB1A98EA2D00C5A682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		664545DC1A98EA2D00C5A682 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,8 +152,22 @@
 				37818427E134E97CF33E772D /* AppDelegate */,
 				378185F16349F7571D2E9F8E /* ViewControllers */,
 				37818FFC490FF55345390D3D /* DataProviders */,
+				37818E3CD545AC85E381AF5C /* Models */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		37818E3CD545AC85E381AF5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3781841E5EDAAB30973336AB /* DHDayModel.m */,
+				37818EB84C6567BD551DA63D /* DHDayModel.h */,
+				378186CCD16FBA7655056146 /* DHQuestionModel.m */,
+				3781867E51EC41267AC59C4E /* DHQuestionModel.h */,
+				3781852840321118EE70315B /* DHAnswerModel.m */,
+				37818B255ED98E5A76DEF47D /* DHAnswerModel.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		37818E95197A2530A3AA1BF3 /* Views */ = {
@@ -330,6 +353,9 @@
 				37818806786C3F3760773262 /* DHRootViewController.m in Sources */,
 				37818B26B4B3E0AE4664EFAF /* DHDayViewController.m in Sources */,
 				378184F87C8B3C9E3A1103ED /* DHDaysViewController.m in Sources */,
+				37818454BBAC6A724F3F3797 /* DHDayModel.m in Sources */,
+				37818FC9F4C51BF2F0485CFC /* DHQuestionModel.m in Sources */,
+				37818AEE2538467326641E61 /* DHAnswerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
