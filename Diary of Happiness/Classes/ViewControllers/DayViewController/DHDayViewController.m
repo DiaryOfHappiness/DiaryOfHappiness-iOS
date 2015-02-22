@@ -14,6 +14,7 @@
 #import "DHQuestionModel.h"
 #import "DHAnswerCell.h"
 #import "DHAnswerModel.h"
+#import "NSDate+Components.h"
 
 
 @interface DHDayViewController ()
@@ -37,6 +38,7 @@
     if ( ![_dayModel isEqual:dayModel] ) {
         _dayModel = dayModel;
         [self updateTitle];
+        [self updateColor];
     }
 }
 
@@ -82,14 +84,21 @@
 - (void)updateColor {
     NSDate * modelDate = self.dayModel.date;
     NSDate * today = [[NSDate date] dateToday];
+    NSTimeInterval timeInterval = [today timeIntervalSinceDate:modelDate];
 
-    if ( [modelDate isEqualToDate:today] ) {
-        self.view.backgroundColor = [UIColor yellowColor];
-    } else if ( [modelDate isGreaterDate:today] ) {
-        self.view.backgroundColor = [UIColor redColor];
-    } else if ( [modelDate isLessDate:today] ) {
-        self.view.backgroundColor = [UIColor greenColor];
+    CGFloat hue = 153.f;
+    CGFloat saturation = 1.f;
+    CGFloat brightness = .83f;
+
+    if ( timeInterval > 0 ) {
+        NSTimeInterval dayInterval = 86400;
+        NSTimeInterval daysFromToday = timeInterval / dayInterval;
+        saturation -= 0.15f * daysFromToday;
+        saturation = MAX(0, saturation);
     }
+
+    self.view.backgroundColor = [UIColor colorWithHue:hue/360.f saturation:saturation brightness:brightness alpha:1.f];
+
 }
 
 

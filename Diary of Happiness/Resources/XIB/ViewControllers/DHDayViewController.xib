@@ -16,6 +16,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image" translatesAutoresizingMaskIntoConstraints="NO" id="JDR-wE-xA6">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="44" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="zUr-bv-1e5">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -27,11 +30,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="JDR-wE-xA6" secondAttribute="trailing" id="3vb-Wz-cok"/>
                 <constraint firstAttribute="trailing" secondItem="zUr-bv-1e5" secondAttribute="trailing" id="Mfk-a1-bB7"/>
                 <constraint firstAttribute="bottom" secondItem="zUr-bv-1e5" secondAttribute="bottom" id="OEy-dd-fiK"/>
+                <constraint firstAttribute="bottom" secondItem="JDR-wE-xA6" secondAttribute="bottom" id="PzU-fh-A6t"/>
+                <constraint firstItem="JDR-wE-xA6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ViV-J7-OXa"/>
                 <constraint firstAttribute="bottom" secondItem="zUr-bv-1e5" secondAttribute="bottom" id="d5D-aP-H4n"/>
                 <constraint firstItem="zUr-bv-1e5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dTy-kO-4gA"/>
                 <constraint firstItem="zUr-bv-1e5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dvF-iB-s1Y"/>
+                <constraint firstItem="JDR-wE-xA6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eqh-jK-bT3"/>
                 <constraint firstItem="zUr-bv-1e5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="g2M-x3-hfT"/>
                 <constraint firstItem="zUr-bv-1e5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hJN-da-YvY"/>
                 <constraint firstAttribute="trailing" secondItem="zUr-bv-1e5" secondAttribute="trailing" id="v7F-p0-dJC"/>
@@ -54,4 +61,7 @@
             </variation>
         </view>
     </objects>
+    <resources>
+        <image name="background-image" width="320" height="568"/>
+    </resources>
 </document>

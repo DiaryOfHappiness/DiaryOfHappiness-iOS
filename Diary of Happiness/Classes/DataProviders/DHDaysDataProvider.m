@@ -55,7 +55,7 @@
 
 
 - (NSUInteger)initialItemIndex {
-    return MAX(self.numberOfItems - 2, 0);
+    return MAX(self.numberOfItems - 1, 0);
 }
 
 
@@ -63,16 +63,14 @@
 
 - (void)createDataSource {
     NSDate * currentDay = [[NSDate date] dateToday];
-    NSDate * tomorrowDay = [currentDay dateTomorrow];
 
     const NSUInteger historyLength = 7;
-    NSMutableArray * dataSource = [NSMutableArray arrayWithCapacity:historyLength + 2];
+    NSMutableArray * dataSource = [NSMutableArray arrayWithCapacity:historyLength + 1];
     for (NSUInteger skipDays = historyLength; skipDays > 0; skipDays--) {
         NSDate * dayDate = [currentDay dateByAddingDays:-skipDays];
         [dataSource addObject:[self.modelBuilder dayModelForDate:dayDate]];
     }
     [dataSource addObject:[self.modelBuilder dayModelForDate:currentDay]];
-    [dataSource addObject:[self.modelBuilder dayModelForDate:tomorrowDay]];
 
     self.daysDataSource = dataSource.copy;
 }

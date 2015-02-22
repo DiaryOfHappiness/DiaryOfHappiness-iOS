@@ -17,7 +17,8 @@
     DHDaysViewController * daysViewController = [DHDaysViewController new];
     self.rootViewController = [[DHRootViewController alloc] initWithRootViewController:daysViewController];
 
-    self.window = self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.tintColor = [UIColor colorWithRed:0.f green:170.f/255.f blue:100.f/255.f alpha:1.f];
     self.window.rootViewController = self.rootViewController;
     [self.window makeKeyAndVisible];
 

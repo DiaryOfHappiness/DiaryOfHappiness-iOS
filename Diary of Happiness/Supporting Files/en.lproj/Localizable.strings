@@ -9,3 +9,8 @@
 "Question.One" = "Что доставило мне радость сегодня?";
 "Question.Two" = "Кому и за что я сегодня благодарен?";
 "Question.Three" = "За что я благодарен себе?";
+
+"Buttons.Menu" = "Меню";
+"Buttons.Today" = "Сегодня";
+
+"Answer.Placeholder" = "Удиви меня!..";

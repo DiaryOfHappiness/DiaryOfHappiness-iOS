@@ -21,6 +21,7 @@
 
 - (void)updateWithModel:(DHAnswerModel *)model {
     self.answerModel = model;
+    self.textField.placeholder = NSLocalizedString(@"Answer.Placeholder", nil);
     self.textField.text = model.answer;
 }
 
