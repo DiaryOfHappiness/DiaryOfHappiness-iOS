@@ -10,6 +10,8 @@
 #import "DHDayModel.h"
 #import "DHQuestionModel.h"
 #import "DHAnswerModel.h"
+#import "NSDate+Compare.h"
+#import "NSDate+Day.h"
 
 
 @implementation DHDayModelBuilder
@@ -18,6 +20,10 @@
     DHDayModel * dayModel = nil;
 
     if ( date ) {
+        if ( [date isEqualToDay:[[NSDate date] dateToday]] ) {
+            return [self todayMockQuestion];
+        }
+
         dayModel = [DHDayModel modelWithDate:date];
         dayModel.questions = @[
          self.questionOne,
@@ -53,6 +59,39 @@
 
 - (DHAnswerModel *)emptyAnswer {
     return [DHAnswerModel new];
+}
+
+
+#pragma mark - Mock
+
+- (DHDayModel *)todayMockQuestion {
+    DHDayModel * dayModel = [DHDayModel modelWithDate:[[NSDate date] dateToday]];
+    dayModel.questions = @[
+     self.questionOne,
+     self.questionTwo,
+     self.questionThree
+    ];
+
+    DHQuestionModel * q1 = dayModel.questions[0];
+    q1.answers = @[
+     [DHAnswerModel modelWithAnswer:@"Хакатон"],
+     [DHAnswerModel modelWithAnswer:@"4х часовой фикс бага в iOS8"],
+     [DHAnswerModel new],
+    ];
+    DHQuestionModel * q2 = dayModel.questions[1];
+    q2.answers = @[
+     [DHAnswerModel modelWithAnswer:@"DOU.ua"],
+     [DHAnswerModel modelWithAnswer:@"GitHub"],
+     [DHAnswerModel modelWithAnswer:@"Ребятам по команде"],
+    ];
+    DHQuestionModel * q3 = dayModel.questions[2];
+    q3.answers = @[
+     [DHAnswerModel modelWithAnswer:@"Я молодец!"],
+     [DHAnswerModel modelWithAnswer:@"Выучил пару новых библиотек"],
+     [DHAnswerModel new],
+    ];
+
+    return dayModel;
 }
 
 @end

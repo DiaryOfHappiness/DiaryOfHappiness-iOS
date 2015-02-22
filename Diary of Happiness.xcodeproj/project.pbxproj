@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		378182981E015C0F496D8E98 /* DHDayModelBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 378185A0670B2612A2ADFEBC /* DHDayModelBuilder.m */; };
+		3781842AAB2C71D9518B85A8 /* DHKeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 37818289E48B72285615F3B9 /* DHKeyboardObserver.m */; };
 		37818454BBAC6A724F3F3797 /* DHDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781841E5EDAAB30973336AB /* DHDayModel.m */; };
 		378184F87C8B3C9E3A1103ED /* DHDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378181E98A28438C63002788 /* DHDaysViewController.m */; };
 		37818631ECCC0484E959F329 /* DHQuestionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3781825096E9E8E36E71F776 /* DHQuestionHeaderView.m */; };
@@ -35,6 +36,7 @@
 		378181F4436B660018942464 /* DHAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAnswerCell.h; sourceTree = "<group>"; };
 		3781825096E9E8E36E71F776 /* DHQuestionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHQuestionHeaderView.m; sourceTree = "<group>"; };
 		37818252F92553813DDE2369 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37818289E48B72285615F3B9 /* DHKeyboardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHKeyboardObserver.m; sourceTree = "<group>"; };
 		37818293CC71369D6B2081C2 /* DHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHAppDelegate.m; sourceTree = "<group>"; };
 		378182EE372339B0884D9685 /* DHDayModelBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDayModelBuilder.h; sourceTree = "<group>"; };
 		3781841E5EDAAB30973336AB /* DHDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDayModel.m; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		37818887A661FE713DD6BCE8 /* DHDaysDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHDaysDataProvider.m; sourceTree = "<group>"; };
 		378188D35CF79A2C7134DC2F /* DHDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDayViewController.h; sourceTree = "<group>"; };
 		378188EB76B63FC760D98576 /* DHDaysDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHDaysDataProvider.h; sourceTree = "<group>"; };
+		378188F0384D305F10FEFAAB /* DHKeyboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHKeyboardObserver.h; sourceTree = "<group>"; };
 		37818A26F47CA81A6FD52F89 /* DHQuestionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHQuestionHeaderView.h; sourceTree = "<group>"; };
 		37818B13C48A21D5957BA3BD /* DHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHRootViewController.h; sourceTree = "<group>"; };
 		37818B255ED98E5A76DEF47D /* DHAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHAnswerModel.h; sourceTree = "<group>"; };
@@ -92,6 +95,14 @@
 			path = DayViewController;
 			sourceTree = "<group>";
 		};
+		378183CD2289FE223E6D2F92 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3781889B03D2C110C931FA14 /* KeyboardObserver */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		37818427E134E97CF33E772D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +138,15 @@
 				378182EE372339B0884D9685 /* DHDayModelBuilder.h */,
 			);
 			path = Builders;
+			sourceTree = "<group>";
+		};
+		3781889B03D2C110C931FA14 /* KeyboardObserver */ = {
+			isa = PBXGroup;
+			children = (
+				37818289E48B72285615F3B9 /* DHKeyboardObserver.m */,
+				378188F0384D305F10FEFAAB /* DHKeyboardObserver.h */,
+			);
+			path = KeyboardObserver;
 			sourceTree = "<group>";
 		};
 		378188C7AD5DB111E6DC6FD4 /* TableViews */ = {
@@ -184,6 +204,7 @@
 				37818E3CD545AC85E381AF5C /* Models */,
 				378187CD9FFEACF6EC3B075A /* Builders */,
 				378188C7AD5DB111E6DC6FD4 /* TableViews */,
+				378183CD2289FE223E6D2F92 /* Utils */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -394,6 +415,7 @@
 				378182981E015C0F496D8E98 /* DHDayModelBuilder.m in Sources */,
 				37818631ECCC0484E959F329 /* DHQuestionHeaderView.m in Sources */,
 				37818D13B84EC51A1ED3B877 /* DHAnswerCell.m in Sources */,
+				3781842AAB2C71D9518B85A8 /* DHKeyboardObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

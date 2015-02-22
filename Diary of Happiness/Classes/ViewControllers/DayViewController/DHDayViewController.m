@@ -14,10 +14,12 @@
 #import "DHQuestionModel.h"
 #import "DHAnswerCell.h"
 #import "DHAnswerModel.h"
-#import "NSDate+Components.h"
+#import "DHKeyboardObserver.h"
+#import "ScrollViewFrameAccessor.h"
 
 
 @interface DHDayViewController ()
+@property (nonatomic, strong) DHKeyboardObserver * keyboardObserver;
 @end
 
 
@@ -26,7 +28,22 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if ( self ) {
+        __weak typeof(self) weakSelf = self;
         self.automaticallyAdjustsScrollViewInsets = NO;
+        self.keyboardObserver = [DHKeyboardObserver new];
+        self.keyboardObserver.willShowAction = self.keyboardObserver.willHideAction = ^{
+            UIViewAnimationOptions animationOptions =
+             weakSelf.keyboardObserver.animationOptions | weakSelf.keyboardObserver.animationCurve;
+            [UIView animateWithDuration:weakSelf.keyboardObserver.animationDuration
+                                  delay:0
+                                options:animationOptions
+                             animations:^{
+                                 CGFloat keyboardHeight = weakSelf.keyboardObserver.keyboardHeight;
+                                 weakSelf.tableView.contentInsetBottom = keyboardHeight;
+                                 weakSelf.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, keyboardHeight, 0);
+                             }
+                             completion:nil];
+        };
     }
     return self;
 }
@@ -105,7 +122,7 @@
 #pragma mark - UITableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"Tap Tap!");
+    [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
 @end
