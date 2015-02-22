@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DTTableViewManager/DTTableViewManager.h>
 
 @class DHDayModel;
+@class DTTableViewController;
 
 
-@interface DHDayViewController : UIViewController
+@interface DHDayViewController : DTTableViewController
 
-@property (strong, nonatomic) IBOutlet UILabel * dataLabel;
-@property (strong, nonatomic) DHDayModel * dayModel;
+@property (nonatomic, strong) DHDayModel * dayModel;
 
 @end
 

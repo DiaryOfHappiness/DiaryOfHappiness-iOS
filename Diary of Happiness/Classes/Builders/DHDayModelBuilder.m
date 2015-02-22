@@ -46,7 +46,7 @@
 
 - (DHQuestionModel *)questionThree {
     DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:@"Question Three?"];
-    questionModel.answers = @[ self.emptyAnswer ];
+    questionModel.answers = @[ self.emptyAnswer, [DHAnswerModel modelWithAnswer:@"Foo Bar Baz"] ];
     return questionModel;
 }
 

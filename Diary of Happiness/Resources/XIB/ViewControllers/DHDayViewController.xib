@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DHDayViewController">
             <connections>
-                <outlet property="dataLabel" destination="5QF-UL-v1B" id="1gV-gP-bOz"/>
-                <outlet property="view" destination="iN0-l3-epB" id="2xZ-BS-klB"/>
+                <outlet property="tableView" destination="zUr-bv-1e5" id="p2l-vA-5Nj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="GcT-XD-du3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,28 +16,40 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QF-UL-v1B">
-                    <rect key="frame" x="279" y="289" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" style="grouped" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="44" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="zUr-bv-1e5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0Yk-ch-zFi"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="5QF-UL-v1B" secondAttribute="centerX" id="TPN-n8-Pwm"/>
-                <constraint firstAttribute="centerY" secondItem="5QF-UL-v1B" secondAttribute="centerY" id="byc-sO-JRR"/>
+                <constraint firstAttribute="trailing" secondItem="zUr-bv-1e5" secondAttribute="trailing" id="Mfk-a1-bB7"/>
+                <constraint firstAttribute="bottom" secondItem="zUr-bv-1e5" secondAttribute="bottom" id="OEy-dd-fiK"/>
+                <constraint firstAttribute="bottom" secondItem="zUr-bv-1e5" secondAttribute="bottom" id="d5D-aP-H4n"/>
+                <constraint firstItem="zUr-bv-1e5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dTy-kO-4gA"/>
+                <constraint firstItem="zUr-bv-1e5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dvF-iB-s1Y"/>
+                <constraint firstItem="zUr-bv-1e5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="g2M-x3-hfT"/>
+                <constraint firstItem="zUr-bv-1e5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hJN-da-YvY"/>
+                <constraint firstAttribute="trailing" secondItem="zUr-bv-1e5" secondAttribute="trailing" id="v7F-p0-dJC"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="TPN-n8-Pwm"/>
-                    <exclude reference="byc-sO-JRR"/>
+                    <exclude reference="Mfk-a1-bB7"/>
+                    <exclude reference="OEy-dd-fiK"/>
+                    <exclude reference="dvF-iB-s1Y"/>
+                    <exclude reference="hJN-da-YvY"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="constraints">
-                    <include reference="TPN-n8-Pwm"/>
-                    <include reference="byc-sO-JRR"/>
+                    <include reference="Mfk-a1-bB7"/>
+                    <include reference="OEy-dd-fiK"/>
+                    <include reference="dvF-iB-s1Y"/>
+                    <include reference="hJN-da-YvY"/>
                 </mask>
             </variation>
         </view>

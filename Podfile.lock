@@ -1,12 +1,28 @@
 PODS:
+  - DTModelStorage (1.1.2):
+    - DTModelStorage/All (= 1.1.2)
+  - DTModelStorage/All (1.1.2):
+    - DTModelStorage/Core
+    - DTModelStorage/CoreDataStorage
+    - DTModelStorage/MemoryStorage
+  - DTModelStorage/Core (1.1.2)
+  - DTModelStorage/CoreDataStorage (1.1.2):
+    - DTModelStorage/Core
+  - DTModelStorage/MemoryStorage (1.1.2):
+    - DTModelStorage/Core
+  - DTTableViewManager (3.0.5):
+    - DTModelStorage (~> 1.1.2)
   - FrameAccessor (2.0)
   - NSDate+Calendar (0.0.6)
 
 DEPENDENCIES:
+  - DTTableViewManager (~> 3.0.0)
   - FrameAccessor (~> 2.0)
   - NSDate+Calendar (~> 0.0.6)
 
 SPEC CHECKSUMS:
+  DTModelStorage: 3542ba5bee1d3654924abeccd8cb8733c5e278e7
+  DTTableViewManager: ffe662e478e63e3942cf1c03e0b5fe74c0e8b735
   FrameAccessor: a4cbd52f4ce74d9c3338dd7db9707fb35a71af71
   NSDate+Calendar: 73e0e7429de90201da3fb41f7165cccb85a59a48
 

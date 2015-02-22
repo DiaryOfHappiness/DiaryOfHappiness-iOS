@@ -24,6 +24,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if ( self ) {
         self.daysDataProvider = [DHDaysDataProvider new];
+        self.automaticallyAdjustsScrollViewInsets = NO;
     }
     return self;
 }
