@@ -24,6 +24,7 @@
 		66E2C6291A9947570054C92E /* DHDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C6281A9947570054C92E /* DHDayViewController.xib */; };
 		66E2C62B1A9969B70054C92E /* DHQuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C62A1A9969B70054C92E /* DHQuestionHeaderView.xib */; };
 		66E2C62D1A9970290054C92E /* DHAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C62C1A9970290054C92E /* DHAnswerCell.xib */; };
+		66E2C62E1A99DC460054C92E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66E2C6301A99DC460054C92E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		66E2C6281A9947570054C92E /* DHDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHDayViewController.xib; sourceTree = "<group>"; };
 		66E2C62A1A9969B70054C92E /* DHQuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHQuestionHeaderView.xib; sourceTree = "<group>"; };
 		66E2C62C1A9970290054C92E /* DHAnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHAnswerCell.xib; sourceTree = "<group>"; };
+		66E2C6321A99DC5B0054C92E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		96E17252E0D050B028754CF6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C955EC948845D70C3227E6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +252,7 @@
 			children = (
 				664545DC1A98EA2D00C5A682 /* main.m */,
 				664545DB1A98EA2D00C5A682 /* Info.plist */,
+				66E2C6301A99DC460054C92E /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				66E2C62D1A9970290054C92E /* DHAnswerCell.xib in Resources */,
 				37818A527F08B9F3831DD4EA /* Images.xcassets in Resources */,
 				66E2C6291A9947570054C92E /* DHDayViewController.xib in Resources */,
+				66E2C62E1A99DC460054C92E /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +398,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66E2C6301A99DC460054C92E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E2C6321A99DC5B0054C92E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		664545FE1A98EA2D00C5A682 /* Debug */ = {

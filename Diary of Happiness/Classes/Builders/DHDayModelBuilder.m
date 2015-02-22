@@ -31,28 +31,28 @@
 
 
 - (DHQuestionModel *)questionOne {
-    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:@"Question One?"];
-    questionModel.answers = @[ self.emptyAnswer ];
+    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:NSLocalizedString(@"Question.One", nil)];
+    questionModel.answers = @[ self.emptyAnswer, self.emptyAnswer, self.emptyAnswer ];
     return questionModel;
 }
 
 
 - (DHQuestionModel *)questionTwo {
-    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:@"Question Two?"];
-    questionModel.answers = @[ self.emptyAnswer ];
+    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:NSLocalizedString(@"Question.Two", nil)];
+    questionModel.answers = @[ self.emptyAnswer, self.emptyAnswer, self.emptyAnswer ];
     return questionModel;
 }
 
 
 - (DHQuestionModel *)questionThree {
-    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:@"Question Three?"];
-    questionModel.answers = @[ self.emptyAnswer, [DHAnswerModel modelWithAnswer:@"Foo Bar Baz"] ];
+    DHQuestionModel * questionModel = [DHQuestionModel modelWithQuestion:NSLocalizedString(@"Question.Three", nil)];
+    questionModel.answers = @[ self.emptyAnswer, self.emptyAnswer, self.emptyAnswer ];
     return questionModel;
 }
 
 
 - (DHAnswerModel *)emptyAnswer {
-    return [DHAnswerModel modelWithAnswer:@""];
+    return [DHAnswerModel new];
 }
 
 @end

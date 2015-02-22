@@ -10,14 +10,35 @@
 #import "DHAnswerModel.h"
 
 
+@interface DHAnswerCell ()
+@property (nonatomic, strong) DHAnswerModel * answerModel;
+@end
+
+
 @implementation DHAnswerCell
 
 #pragma mark - DTModelTransfer Protocol
 
 - (void)updateWithModel:(DHAnswerModel *)model {
-    if ( !model.isEmpty ) {
-        self.textField.text = model.answer;
-    }
+    self.answerModel = model;
+    self.textField.text = model.answer;
+}
+
+
+- (id)model {
+    return self.answerModel;
+}
+
+
+#pragma mark - Text Field Events
+
+- (IBAction)textFieldDidChange:(UITextField *)sender {
+    self.answerModel.answer = sender.text;
+}
+
+
+- (IBAction)textFieldDidEnd:(UITextField *)sender {
+    self.answerModel.answer = sender.text;
 }
 
 @end

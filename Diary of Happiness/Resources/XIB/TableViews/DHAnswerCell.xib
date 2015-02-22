@@ -18,8 +18,13 @@
                         <rect key="frame" x="18" y="8" width="284" height="27.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light" returnKeyType="done"/>
+                        <connections>
+                            <action selector="textFieldDidChange:" destination="iaS-qW-cuy" eventType="valueChanged" id="ovU-Hp-fwg"/>
+                            <action selector="textFieldDidEnd:" destination="iaS-qW-cuy" eventType="editingDidEndOnExit" id="5fm-Wp-Sed"/>
+                        </connections>
                     </textField>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="bdh-Qb-gXq" secondAttribute="bottom" id="5ST-20-H8W"/>
                     <constraint firstAttribute="trailingMargin" secondItem="bdh-Qb-gXq" secondAttribute="trailing" constant="10" id="GZJ-cr-ncA"/>
@@ -27,6 +32,7 @@
                     <constraint firstItem="bdh-Qb-gXq" firstAttribute="top" secondItem="4HI-iW-ZMQ" secondAttribute="topMargin" id="tvK-iI-DCn"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="textField" destination="bdh-Qb-gXq" id="MnL-Ei-TBo"/>
             </connections>

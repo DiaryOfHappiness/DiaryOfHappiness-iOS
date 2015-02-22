@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Diary of Happiness
+
+  Created by Philip Vasilchenko on 22.02.15.
+  Copyright (c) 2015 Philip Vasilchenko. All rights reserved.
+*/
+
+"Question.One" = "Что доставило мне радость сегодня?";
+"Question.Two" = "Кому и за что я сегодня благодарен?";
+"Question.Three" = "За что я благодарен себе?";
